@@ -138,12 +138,3 @@ function solveSudoku(board) {
 solve.onclick = function () {
   solveSudoku(board);
 };
-
-function solveSudokuHelper(board, r, c) {
-  if (r == 9) {
-    changeBoard();
-  }
-  if (c == 9) {
-    solveSudokuHelper(board, r, c + 1);
-  }
-}
